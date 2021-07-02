@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Apartment::factory(20)->create();
+        // \App\Models\User::factory(10)->create();
+        $this->call([
+            ApartmentSeeder::class,
+        ]);
     }
 }

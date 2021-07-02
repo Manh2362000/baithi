@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Apartment;
 use Illuminate\Database\Seeder;
 
 class ApartmentSeeder extends Seeder
@@ -13,7 +14,6 @@ class ApartmentSeeder extends Seeder
      */
     public function run()
     {
-        //
-        \App\Models\Apartment::factory(20)->create();
+        Apartment::factory()->count(20)->create();
     }
 }

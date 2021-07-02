@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Apartment extends Model
 {
     use HasFactory;
+    protected $table="apartments";
+    protected $fillable=[
+        "name",
+        "address",
+        "price",
+        "detail",
+        "general_info",
+        "image",
+        "status",
+
+    ];
 }
